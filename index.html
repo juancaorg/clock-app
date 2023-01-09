@@ -2,26 +2,49 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-
-  <title>Frontend Mentor | Clock App</title>
+  <meta charset="UTF-8" />
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Hack to import a favicon from another, already live website -->
+  <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=juanca.org" />
+  <link rel="stylesheet" href="./style.css" />
+  <!-- The 'defer' boolean attribute is set to indicate to the browser that the script is meant to be executed after the document has been parsed -->
+  <script defer src="./script.js"></script>
+  <title>Clock App | juanca.dev</title>
 </head>
 
 <body>
-  , it's currently
-
-  in
-
-  More
-  Less
-
-  Current timezone
-  Day of the year
-  Day of the week
-  Week number
+  <header class="header">
+    <figure class="header__figure">
+      <blockquote class="header__blockquote">
+        <p>“The science of operations, as derived from mathematics more especially, is a science of itself, and has its
+          own
+          abstract truth and value.”</p>
+      </blockquote>
+      <figcaption class="header__figcaption">Ada Lovelace</figcaption>
+    </figure>
+    <img src="./assets/desktop/icon-refresh.svg" alt="" class="header__refresh" aria-hidden="true" />
+  </header>
+  <main class="main">
+    <div class="main__greeting">
+      <img src="./assets/desktop/icon-sun.svg" alt="" class="main__greeting--icon" aria-hidden="true" />
+      <p class="main__greeting--paragraph">Good morning</p>
+    </div>
+    <div class="main__time">
+      <p class="main__time--paragraph"><span>11:37</span> BST</p>
+    </div>
+    <div class="main__location">
+      <p class="main__location--paragraph">in <span>London, UK</span></p>
+    </div>
+    <button class="main__show-more">More <img src="./assets/desktop/icon-arrow-down.svg" alt=""
+        class="main__show-more-downarrow" aria-hidden="true"></button>
+    <ul class="main__more-content">
+      <li>Current timezone <span>Europe/London</span></li>
+      <li>Day of the year <span>295</span></li>
+      <li>Day of the week <span>5</span></li>
+      <li>Week number <span>42</span></li>
+    </ul>
+  </main>
 </body>
 
 </html>
