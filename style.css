@@ -51,6 +51,44 @@ video {
   margin-top: 0.5rem;
 }
 
+@keyframes spinanimation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.header__refresh {
+  border: none;
+  background-color: transparent;
+  outline: 0;
+  width: 50px;
+}
+
+.header__refresh>img {
+  filter: invert(88%) sepia(5%) saturate(55%) hue-rotate(131deg) brightness(93%) contrast(88%);
+}
+
+.header__refresh:hover {
+  cursor: pointer;
+  filter: brightness(0) invert(1);
+}
+
+.header__refresh.spin-animation {
+  animation: spinanimation 500ms ease-in;
+}
+
 .main__content {
   margin: 350px 26px 26px;
   display: flex;
