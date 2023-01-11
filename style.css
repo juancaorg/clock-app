@@ -85,7 +85,7 @@ video {
   filter: brightness(0) invert(1);
 }
 
-.header__refresh.spin-animation {
+#refresh-icon.spin-animation {
   animation: spinanimation 500ms ease-in;
 }
 
